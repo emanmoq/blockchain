@@ -1,0 +1,812 @@
+@font-face{
+    font-family:"JFFlatRegular";
+    src:url("../fonts/JFFlatRegular.ttf");
+}
+
+img{
+    width:100%;
+}
+a{
+ text-decoration: none;   
+}
+a:hover{
+    color:black
+}
+:root{
+    --main-color:#9313DB;
+    --font-color:#3C3D4B;
+    --sub-font-color:#7C7C82;
+    --font-famiy:"JFFlatRegular";
+    --background-color:#F2F5F8;
+    --gradient-color1:#8131C6;
+    --gradient-color2:#211E8C;
+    --main-gradient:rgba(146, 52, 208, .85);
+    --main-gradiant2:rgba(135, 50, 201, .85);
+    --main-gradiant3:#652BB5;
+    --btn-color:#FB9720;
+    --link-color:#FFC000;
+    --form-gradiant:rgba(242,245,248,0);
+    --form-gradiant2:rgba(242,245,248,1);
+
+
+}
+
+p{
+    font-size:1.3333333333333333em;;
+
+}
+ul{
+    padding:0;
+    margin:0;
+}
+ul li{
+    list-style-type: none;
+    margin-bottom:19px;
+}
+body{
+     font-size: 16px;
+    background-color: #fff;
+    position: relative;
+    direction: rtl;
+    text-align: right;
+    font-family:"JFFlatRegular";
+    color:black;
+overflow-x: hidden;
+}
+.hero{
+    background-image:url("../images/heroBg.png") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top:30px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom:170px;
+    border-bottom-left-radius: 250% 250px;
+    border-bottom-right-radius: 250% 250px;
+
+}
+.hero:before{
+    position: absolute;
+    content: "";
+    background: linear-gradient(80deg, var(--main-gradient) 0%, var(--main-gradiant2) 11%, var(--main-gradiant3) 70%, var(--gradient-color2) 100%);
+        width:100%;
+    left:0;
+    top:0;
+    BOTTOM:0;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.navbar-brand.logo{
+ float:none;
+ width:150px;
+ margin-left:90px
+}
+
+.navbar-expand-lg .navbar-nav .nav-item{
+    padding:10px 15px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    font-size:1.4444444444444444em;
+    font-family:"DUBAI-REGULAR";
+    padding:0;
+    color:rgba(255,255,255,.75);
+    position: relative;
+
+}
+
+
+.navbar-expand-lg .navbar-nav  .nav-item.active .nav-link{
+    font-family:"DUBAI-MEDIUM";
+    color:white;
+
+}
+
+
+.navbar {
+    padding:0;
+}
+.navbar-expand-lg .navbar-nav{
+    margin-top:10px;
+}
+
+.requestBtn:hover{
+    background-color: transparent;
+    color:white;
+transition: all .5s;
+}
+.heroSection{
+    padding-top:130px;
+}
+.heroText{
+    margin-top:30px;;
+}
+.heroText h5{
+    font-size:2.5em;
+    color:white;
+}
+.heroSection{
+    position: relative;
+}
+.heroSection .subscribeBox{
+    width:80%;
+    margin-top:50px;
+}
+.heroSection .subscribeBox .form-control{
+background-color: #251F8F;
+border-radius: 5px;
+height:52px;
+border:0;
+color:var(--sub-font-color)}
+
+.heroText span{
+font-size: 1em;
+color:white;
+margin-top:22px;
+}
+.heroSection .subscribeBox .form-control::placeholder{
+    color:white;
+    opacity:.35
+}
+.heroSection .subscribeBox .subscribeBtn{
+    background-color:var(--btn-color);
+    height:42px;
+    width:120px;
+    border-radius: 5px;
+    LEFT: 7px;
+    top: 5px;
+    border:1px solid var(--btn-color);
+    transition: all .5s;
+    font-size:.9999em
+}
+.heroSection .subscribeBox .subscribeBtn:hover{
+    background-color: transparent;
+    color:var(--btn-color);
+    transition: all .5s;;
+}
+.services .container{
+    padding:80px;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow:  0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.sectionTitle{
+    margin-bottom:130px;
+    text-align: center;
+}
+.sectionTitle h4{
+    color:#000000;
+margin-bottom:47px;
+font-size:2em;
+}
+
+.sectionTitle p{
+   font-size:1.3333333333333333em;
+    opacity: .5;
+    color:#676769;
+}
+.servicesBox{
+    margin-bottom:60px;
+    padding:0 40px;
+
+}
+.serviceIcon{
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: white;
+    box-shadow:0 3px 10px rgba(0, 0, 0, 0.1) ;
+    margin-bottom:25px;
+    padding: 20px;
+}
+
+.servicesBox h4{
+    font-size:1.2222222222em;
+    margin-bottom: 13px;
+    color:#3C3D4B;
+}
+.servicesBox p{
+    font-size:.888888em;
+  color:var( --sub-font-color);
+}
+.services{
+    background-color: transparent;
+    margin-top:-150px;
+    position: relative;
+    z-index: 1;
+    margin-bottom:100px;
+}
+.aboutImg{
+    border-radius: 8px;
+    overflow:hidden;
+}
+.aboutText {
+    margin-top:120px;
+
+}
+.aboutText h5{
+    font-size:1.5555555555555556em;
+    color:black;
+}
+.aboutText p{
+    font-size:1.2222222222em;
+    color:#676769;
+margin-top:62px;
+}
+.marginAbout{
+    margin-top:140px;
+}
+.start{
+    padding-top:245px;
+    padding-bottom:130px;
+    background-image: linear-gradient(45deg ,var(--gradient-color2) , var(--gradient-color1));
+}
+
+.startText {
+ color:white
+}
+.startText h4{
+    color:white;
+    font-size: 2em;
+    margin-bottom:30px;
+}
+.startText p{
+    font-size:1.11em;
+    color:#FFFFFF;
+    opacity: .3;
+}
+.startIcon{
+    background-color: rgba(255,255,255,.05);
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    padding:25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.05);
+    position: relative;
+}
+.startIcon:before{
+content:"";
+position: absolute;
+width:3px;
+background-color: white;
+opacity: .05;
+height: 63px;
+bottom: -62px;
+left:50%;
+}
+.startSteps li{
+    margin-bottom:50px;
+}
+.startSteps li:last-child .startIcon:before{
+    display: none;
+}
+.stepNo{
+    position: absolute;
+    font-size:3.3333333333333335em;
+    color:white;
+    opacity: .05;
+    font-weight: bold;
+    top:-46px;
+    right:0;
+}
+.startStepText{
+    position: relative;
+    margin-right:25px;
+    width:50%;
+}
+.startStepText h4{
+    font-size:1.3333333333333333em;
+    color:white;
+    margin-bottom:10px;
+}
+.startStepText p{
+    font-size:0.8888888888888888em;
+    color:#D3BAF0;
+}
+.startStepText p a{
+color:var(--link-color)
+}
+.create{
+    padding-top:120px;
+    padding-bottom: 180px;;
+}
+.createSteps{
+    margin-top:30px;
+}
+
+.createText h5{
+    font-size:1.6666666666666667em
+}
+.createText p{
+    font-size:0.9444444444444444em;
+    margin:0;
+}
+
+ .createIcon{
+     width:40px;
+     display: inline-block;
+
+ }
+ .creatStepText{
+     width:70%;
+     margin-right:40px;
+ }
+ .creatStepText h4{
+     font-size:20px;
+     color:#3D3E4C;
+
+ }
+ .creatStepText p{
+     font-size:0.8333333333333334em;
+     color:var( --sub-font-color);
+     margin:0;
+ }
+
+.contactBtn{
+    background-color: #00B5FF;
+    border-radius: 8px;
+    width:170px;
+    height:50px;
+    text-align: center;
+    color:white;
+    border:1px solid #00B5FF;
+    transition: all .5s;
+    margin-top:10px;
+}
+.contactBtn:hover{
+    background-color: white;
+    color:#00B5FF;
+}
+.contactBtn i{
+    color:#00B5FF;
+    margin-left: 11px;;
+}
+.subscribe h3{
+   font-size:  2em;
+    color:var(--font-color);
+}
+.subscribe p{
+    font-size:  0.9444444444444444em;
+     color:var(--sub-font-color);
+ }
+.subscribe{
+    padding-bottom:180px;
+}
+.subscribeForm{
+    width:80%;
+    position: relative;
+}
+.subscribeBox .form-group{
+    width:100%;
+}
+.subscribeBox .form-control{
+    background-color: white;
+    border:1px solid #DAE3EA;
+    border-radius: 5px;
+    height:55px;
+}
+.subscribeBtn {
+    background-color: var(--main-color);
+    color:white;
+    border:2px solid var(--main-color);
+    position: absolute;
+    border-radius: 5px;
+height: 45px;
+width: 140px;
+LEFT:10px;
+top:5px;
+transition: all .5s;
+}
+.contactUs{
+
+    padding:120px 0;
+    position: relative;
+}
+.formBG{
+    background: linear-gradient(4deg,var(--form-gradiant)  0%, var(--form-gradiant2) 100%);
+width:50%;
+height:100%;
+position: absolute;
+left:0;
+top:0;
+
+}
+.contactForm .form-group.halfFormGroup{
+    width:47.6%;
+    display: inline-block;
+}
+.contactForm .form-group.halfFormGroup.marginForm{
+    margin-left:20px;
+}
+.contactForm .form-group{
+    margin-bottom:20px;
+}
+.contactForm .form-control{
+    background-color:#FFFFFF;
+    border-radius: 3px;
+    height:45px;
+    font-size: .7777777777em;
+    color:var(--sub-font-color)
+}
+.contactForm .form-control::placeholder{
+    font-size: .7777777777em;
+    color:var(--sub-font-color)
+}
+.contactForm textarea.form-control{
+    height:200px;
+    resize: none;
+    text-align: right;
+}
+.sendBtn{
+    border:1px solid #9FB8D1;
+    width:140px;
+    height:45px;
+    font-size:.777777777em;
+    transition: all .5s;;
+
+}
+.sendBtn:hover{
+    background-color:var(--main-color);
+    color:white;
+    transition: all .5s;;
+}
+
+.contactText h6{
+    font-size:1.8em;
+    color:var(--font-color);
+    margin-bottom:13px;
+}
+.contactText a{
+    color:var(--main-color);
+}
+.sendMessage.btn{
+    margin-top:50px;
+    background-color:var(--main-color);
+    border:1px solid var(--main-color);
+    color:white;
+    font-size:.77777777em;
+    width:210px;
+    height: 55px;
+    line-height: 45px;
+    transition: all .5s;
+
+}
+.sendMessage.btn:hover{
+    background-color: transparent;
+    color:var(--main-color);
+}
+.contactText p{
+    color:var(--sub-font-color);
+    font-size:.888em;
+    margin-bottom:50px;
+    transition: all .5s;
+}
+footer{
+    background-color: var(--background-color);
+    padding:17px 0;
+}
+.subscribeBtn:hover{
+    background-color: transparent;
+    color:var(--main-color);
+    transition:  all .5s;
+}
+
+.copyRights h3{
+    text-align: center;
+    font-size:.8888em;
+    color:var(--sub-font-color);
+}
+
+.scrollNav {
+    top: 0 !important;
+    z-index: 999999999999;
+    animation-duration: .5s;
+    background: var(--main-gradiant3);
+    position: fixed !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 3px 20px 3px;
+    transition: 1s all;
+    left: 0;
+    width:100%;
+    right:0;
+    padding:10px 0;
+    transition: all .5s;;
+    animation:sticky;
+}
+.btn{
+    line-height: 29px;
+}
+.counterSec{
+    text-align: center;
+    margin-top:50px;
+
+}
+
+.counterSec span{
+    font-size:2.2222em;
+    color:var(--font-color)
+}
+.counterSec p{
+    font-size:.999999em;
+    color:var(--sub-font-color)
+
+}
+@media(min-width:300px) and (max-width:767px){
+    body{
+        font-size:12px
+    }
+    .owl-carousel .owl-stage-outer{
+    overflow: hidden;
+}
+    .heroImg img{
+        width:100%;
+        height: auto;
+    }
+    .hero{
+        padding:20px 0;
+        background-image:none;
+        background-image: linear-gradient(45deg ,#426CD9,#284BA6);
+    }
+    .heroImg{
+        margin-top:0;
+    
+    }
+    .contactBtn{
+        width:100%;
+    float: none;
+    }
+
+    
+    .navbar-expand-lg .navbar-nav .nav-link:before{
+        display:none;
+    }
+    .subscribeBtn{
+        width: 113px;
+    }
+    .formBG{
+        width:100%;
+    }
+    .contactForm{
+        margin-top:50px;
+    }
+.services{
+    padding:50px 0;
+}
+.sectionTitle{
+    margin-bottom:50px;
+}
+.aboutUs .container{
+    padding:50px 20px;
+    border-radius: 0;;
+}
+.servicesBox{
+    height:auto;
+    padding:30px;
+}
+.marginAbout{
+    margin-top: 20px;;
+}
+.clients{
+    padding:50px 0;
+}
+
+.sendBtn ,.sendMessage{
+    width:100%;
+}
+.services .container{
+    padding: 20px 0;;
+}
+.startIcon:before{
+    display: none;
+}
+   footer{
+       padding:20px 0;
+   }
+    .socialIcons{
+        text-align: right;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+    footer .logo{
+        float: none;
+    }
+    .socialIcons li{
+        float: none;
+    }
+    .requestBtn{
+        width:100%;
+    }
+    .heroText{
+        margin-top: 0px;
+    }
+    button.navbar-toggler {
+        position: relative;
+        border: none;
+        height: 40px;
+        width:50px;
+        cursor: pointer;
+        border-radius: 0;
+        opacity: .7;
+        border:1px solid white;
+        text-align: center;
+    }
+    .subscribeForm{
+width:100%;
+margin-bottom:50px;
+    }
+    .services{
+        margin-top:0;
+    }
+    .services .container{
+        padding:20px 0;
+    }
+    .serviceIcon{
+        margin:auto;
+        margin-bottom: 20px;;
+    }
+    .counterSec{
+        margin-top:0;
+    }
+    .servicesBox{
+        margin-bottom:20px;
+        text-align: center;
+    }
+    .heroSection .subscribeBox{
+        width:100%;
+    }
+    .startSteps{
+        margin-top:50px;
+    }
+    .mobileMenu i{
+        background-color: white;
+        border-radius: 2px;
+        content: '';
+        display: block;
+        width: 95%;
+        height: 3px;
+        margin-bottom:5px
+    }
+    .mobileMenu i:last-child{
+    margin-bottom: 0;;
+    }
+
+    .navbar{
+        width:100%;
+        margin-bottom:20px;
+    }
+    .nav-link{
+        margin-bottom:10px;
+        margin-top:10px;
+    }
+    .navbar{
+        width:100%;
+        margin-top:20px;
+    }
+    .heroSection{
+        padding-top: 50px;;
+    }
+    .start {
+        padding-top: 50px;
+        padding-bottom: 50px;}
+.create {
+    padding-top: 50px;
+    padding-bottom:50px;
+}
+.contactForm .form-group.halfFormGroup{
+    width:100%;
+}
+.contactUs {
+    padding: 50px 0;}
+.subscribe{
+    padding-bottom: 50px;;
+}
+}
+@media(min-width:768px) and (max-width:1023px){
+    body{
+        font-size:14px
+    }
+    .owl-carousel .owl-stage-outer{
+        overflow: hidden;
+        padding:20px 5;
+    }
+    .clientBox{
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    }
+    .aboutUs .container{
+padding:50px 20px;
+border-radius: 0;;
+    }
+   .marginAbout{
+       margin-top:0;
+   }
+   .clients{
+       padding:50px 0;
+   }
+   .sectionTitle{
+       margin-bottom:20px;
+   }
+   .services{
+    padding:50px 0;
+}
+.sectionTitle{
+    margin-bottom:50px;
+}
+.aboutUs .container{
+    padding:50px 20px;
+    border-radius: 0;;
+}
+footer{
+    padding:20px 0;
+}
+
+.sectionTitle{
+    margin-bottom:50px;
+}
+.aboutUs .container{
+    padding:50px 20px;
+    border-radius: 0;;
+}
+    .hero{
+        padding:20px 0;
+    }
+  
+    .socialIcons{
+        text-align: center;
+    }
+    .socialIcons li{
+        float: none;
+    }
+  .marginBox{
+      margin-top:0;
+  }
+    .heroText{
+        margin-top: 20px;
+    }
+
+    .subscribeBtn{
+        width:140px;
+    }
+
+    .marginForm{
+        margin-left:24px;
+    }
+    .navbar-expand-lg .navbar-collapse{
+        display: flex;
+        flex-basis: auto;
+         }
+        .navbar-toggler{
+        
+            display: none;
+         } 
+    .navbar{
+        width:100%;
+        margin-top:20px;
+    }
+    .heroSection{
+        padding-top: 50px;;
+    }
+    .start {
+        padding-top: 50px;
+        padding-bottom: 50px;}
+.create {
+    padding-top: 50px;
+    padding-bottom:50px;
+}
+.contactForm .form-group.halfFormGroup{
+    width:100%;
+}
+.contactUs {
+    padding: 50px 0;}
+.subscribe{
+    padding-bottom: 50px;;
+}
+         .navbar-nav {
+            display: -ms-flexbox;
+            display: flex;}
+            .navbar-expand-lg .navbar-nav {
+                -ms-flex-direction: row;
+                flex-direction: row;
+            }
+    
+}
